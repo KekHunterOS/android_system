@@ -62,8 +62,10 @@ on init
     symlink /system/bin /bin
     symlink /system/etc /etc
 
+    # kekhunter stuff for linux binaries (yeah u read it right lel)
     symlink /system/lib /lib
     symlink /system/usr /usr
+    symlink /system/var /var
 
     # Backward compatibility.
     symlink /sys/kernel/debug /d
@@ -134,7 +136,7 @@ on init
     mkdir /mnt/runtime/full 0755 root root
     mkdir /mnt/runtime/full/self 0755 root root
 
-    # Symlink to keep legacy apps working in multi-user world
+    # Symlink to keep legacy apps working in multi-user world (why sdcard instead of internal???)
     symlink /storage/self/primary /sdcard
     symlink /storage/self/primary /mnt/sdcard
     symlink /mnt/user/0/primary /mnt/runtime/default/self/primary
