@@ -20,7 +20,7 @@ include $(BUILD_PREBUILT)
 # init.nethunter.rc (needs command: make nhrc)
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := nhrc
+LOCAL_MODULE := init.nethunter.rc
 LOCAL_MODULE_TAGS  := optional
 LOCAL_SRC_FILES := init.nethunter.rc
 LOCAL_MODULE_CLASS := ETC
